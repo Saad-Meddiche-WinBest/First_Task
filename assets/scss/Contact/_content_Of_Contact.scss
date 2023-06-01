@@ -1,0 +1,161 @@
+.Content_Of_Page_Contact{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+
+    margin: 40px;
+
+    font-family: sans-serif;
+
+    .First_Part{
+
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        // justify-content: space-between;
+        gap: 20px;
+        flex-direction: column;
+
+      
+
+        .Formule{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            width: 100%;
+            .Content{
+                width: 60%;
+                border-radius: 10px;
+                padding: 20px;
+                background-color: #D3CBCB;
+                text-align: center;
+                .contact-form {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 400px;
+                    margin: 0 auto;
+                  }
+                  
+                  .form-group {
+                    margin-bottom: 20px;
+                  }
+                  
+                  label {
+                    display: block;
+                    font-weight: bold;
+                    text-align: start;
+                    width: 80%;
+                    margin: auto;
+
+                  }
+                  
+                  input,
+                  textarea
+                    {
+                    width: 80%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                  }
+
+                  select{
+                    width: 85%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    option{
+                        width: 100%;
+
+                    }
+                  }
+             
+                  
+       
+                  
+                  button[type="submit"] {
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                  }
+                  
+                  button[type="submit"]:hover {
+                    background-color: #45a049;
+                  }
+                  
+            }
+        }
+    }
+    .Second_Part{
+        width: 40%;
+
+        .Upper_Part{
+            .Content{
+                .Links{
+                    .Link{
+                        a{
+                          all:unset;
+
+                          text-decoration: none;
+                          font-weight: bold;
+                          color: black;
+                          line-height: 40px;
+
+                          cursor: pointer;
+
+                          span{
+                            font-weight: normal;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+
+        .Middle_Part{
+            .Description{
+                margin: 20px;
+            }
+        }
+
+        .Lower_Part{
+            .Title{
+                color: red;
+                font-size: 20px;
+                margin-bottom:20px
+            }
+            .Options{
+                line-height: 30px;
+                .Option{
+                    svg{
+                        font-weight: 1000;
+                        color: red;
+                       
+                    }
+                }
+            }
+        }
+    }
+
+    .Header{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        .Title{
+            color: red;
+            font-weight:1000;
+            font-size:24px;
+        }
+
+        .Line{
+            height: 5px;
+          flex: 0.9;
+            background-color: red;
+        }
+    }
+}

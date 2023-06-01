@@ -1,0 +1,111 @@
+.Texts{
+    margin-top: 50px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    word-wrap: break-word;
+    text-align: start;
+    .Text_Content{
+        width: 80%;
+        .First_Text{
+            line-height: 22px;
+            .First_Title{
+                font-family: sans-serif;
+                font-size: 36px;
+                font-weight: bold;
+                p{
+                    margin: 0;
+                }
+            }
+    
+            .First_Content{
+    
+            }
+        }
+    
+        .Second_Text{
+            line-height: 22px;
+
+            .Second_Title{
+                font-family: sans-serif;
+                font-size: 36px;
+                font-weight: bold;
+
+                color: red;
+                p{
+                    margin: 0;
+                }
+            }
+    
+            .Second_Content{
+                
+            }
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width:750px) {
+    .Texts{
+        margin-top: 50px;
+        width: 100%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: sans-serif;
+      
+    
+        .Text_Content{
+            max-width: 80%;
+            .First_Text{
+                line-height: 22px;
+                .First_Title{
+                    font-family: sans-serif;
+                    font-size: 18px;
+                    font-weight: bold;
+                    p{
+                        margin: 0;
+                    }
+                }
+
+                .First_Content{
+                    font-size: 12px;
+
+                }
+        
+                
+            }
+        
+            .Second_Text{
+                line-height: 22px;
+    
+                .Second_Title{
+                    font-family: sans-serif;
+                    font-size: 18px;
+                    font-weight: bold;
+    
+                    color: red;
+                    p{
+                        margin: 0;
+                    }
+                }
+                .Second_Content{
+                    font-size: 12px;
+
+                }
+        
+               
+            }
+        }
+        
+    } 
+}

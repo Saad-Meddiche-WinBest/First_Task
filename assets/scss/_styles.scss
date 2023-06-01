@@ -1,0 +1,37 @@
+.style_1{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.style_2{
+    font-weight: bold;
+    color: red;
+}
+
+.style_3{
+    font-weight: bold;
+}
+
+.style_4{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.style_5{
+    color: red;
+}
+
+.style_6{
+    transition: 0.5s;
+    &:hover{
+        color: #ce318d ;
+    }
+}
+.style_7{
+    font-weight: bold ;
+    text-decoration-line: underline;
+}
+.style_8{
+    font-weight: bold ;
+    color: #08c;
+}

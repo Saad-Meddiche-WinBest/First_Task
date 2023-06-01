@@ -1,0 +1,261 @@
+.Slide{
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    max-height:400px;
+
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
+
+
+    .Slide_Content{
+        transition: 1s;
+        background-image: url("../img/ant.webp");
+        background-size: cover;
+
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .Left_Button , .Right_Button{
+            button{
+                padding: 10px;
+                
+
+                color: white;
+                background-color: grey;
+
+                font-size: 30px;
+                font-weight: bold;
+
+                border: none;
+                border-radius: px 5px;
+
+                transition:0.8s;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: transparent;
+
+                }
+                
+            }
+
+            
+        }
+
+        .Content{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            flex-direction: column;
+
+            width: fit-content;
+            height: 100%;
+
+            .Holder{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                flex-direction: column;
+    
+                width: fit-content;
+                height: 60%;
+                .Title{
+                    animation: title_movement 0.4s linear;
+                    margin: 20px;
+                    background: rgba(0, 0, 0, 0.7);
+    
+                    p{
+                        color: white;
+                        font-size: 32px;
+                        font-weight: bold;
+                        padding: 10px;
+                        margin: 0;
+                    }
+    
+                    
+    
+                }
+                .Demande{
+                    animation: button_movement 0.8s linear;
+                    
+                    margin: 20px;
+                    button{
+                        background-color: rgb(44, 40, 40);
+                        color: white;
+    
+                        border: 2px solid red;
+                        border-radius: 50px;
+    
+                        padding: 10px;
+    
+                        font-size: 16px;
+                        font-weight: bold;
+    
+                    }
+                }
+            }
+            
+          
+        }
+        
+
+    }
+
+}
+
+@keyframes title_movement {
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }     
+}
+
+@keyframes button_movement {
+    0%{
+        transform: translateX(-200%);
+        opacity: 0;
+    }   
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    } 
+}
+
+@media (max-width:750px){
+    .Slide{
+        display: flex;
+        flex: 1;
+    
+        justify-content: center;
+        align-items: center;
+    
+        height: 100%;
+        max-height:400px;
+    
+        width: 100%;
+    
+        position: relative;
+        z-index: 1;
+    
+    
+        .Slide_Content{
+            transition: 1s;
+            background-image: url("../img/ant.webp");
+            background-size: 100% 100%;
+    
+            height: 70%;
+            width: 100%;
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .Left_Button , .Right_Button{
+                button{
+                    padding: 5px;
+                    
+    
+                    color: white;
+                    background-color: grey;
+    
+                    font-size: 20px;
+                    font-weight: bold;
+    
+                    border: none;
+                    border-radius: 5px 5px;
+    
+                    transition:0.8s;
+                    cursor: pointer;
+    
+                    &:hover{
+                        background-color: transparent;
+    
+                    }
+                    
+                }
+    
+                
+            }
+    
+            .Content{
+                display: flex;
+                justify-content: end;
+                align-items: end;
+    
+                flex-direction: column;
+    
+                width: fit-content;
+                height: 100%;
+    
+                .Holder{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+        
+                    flex-direction: column;
+        
+                    width: fit-content;
+                    height: 65%;
+                    .Title{
+                        animation: title_movement 0.4s linear;
+                        margin: 20px;
+                        background: rgba(0, 0, 0, 0.7);
+        
+                        p{
+                            color: white;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding: 10px;
+                            margin: 0;
+                        }
+        
+                        
+        
+                    }
+                    .Demande{
+                        animation: button_movement 0.8s linear;
+                        
+                        margin: 20px;
+                        button{
+                            background-color: rgb(44, 40, 40);
+                            color: white;
+        
+                            border: 2px solid red;
+                            border-radius: 50px;
+        
+                            padding: 5px;
+        
+                            padding: 10px;
+
+                            font-size: 16px;
+                            font-weight: bold;
+        
+                        }
+                    }
+                }
+                
+              
+            }
+            
+    
+        }
+    
+    }
+}

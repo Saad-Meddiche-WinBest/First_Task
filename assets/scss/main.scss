@@ -1,0 +1,35 @@
+@use './menu';
+@use './Home/slide';
+@use './Home/texts';
+@use './Home/Services';
+@use './Home/qualities';
+@use './footer';
+
+@use './NotreEntreprise/content';
+@use './Contact/content_Of_Contact';
+@use './styles';
+
+
+
+body{
+    margin: 0;
+  
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    .child_container{
+        width: 100%;
+        max-width: 1300px;
+    }
+   
+}
+  
+  
+  

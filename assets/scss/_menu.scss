@@ -1,0 +1,426 @@
+.Menu{
+    height: 100px;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    width: 100%;
+
+   
+
+    .Menu_Content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        height: 100%;
+        width:  100%;
+
+
+        .Logo{
+
+            img{
+                width: 100px;
+            }
+        }
+
+        .Routes{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            .Route{
+                border-radius: 50px 50px;
+                transition: 1s ;
+                cursor: pointer;
+
+                position: relative;
+                
+
+                .Drop{
+                    
+                    transition: 1s ;
+
+                    opacity: 0;
+                    height: 0px;
+
+                    position: absolute;
+                    margin: 10px;
+                    
+
+
+                    .Link{
+                        padding: 5px;
+                        border-bottom: 1px solid red;
+                        background-color: black;
+                        min-width: 280px;
+
+                        position: relative;
+                        a{
+                            color: white;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                        }
+
+                        &:hover{
+                            background-color: red;
+
+                            .Child_Drop{
+                                display: block;
+
+                            }
+                        }
+
+                        .Child_Drop{
+                            display: none;
+                            position: absolute;
+                            left: 100%;
+                            top: 0%;
+                            margin: 2px;
+
+                            .Child_Link{
+                                padding: 4px;
+                                border-bottom: 1px solid red;
+                                background-color: black;
+                                min-width: 250px;
+                                a{
+                                    color: white;
+                                    font-family: sans-serif;
+                                    font-weight: bold;
+
+                                }
+                                &:hover{
+                                    background-color: red;
+                                }
+                            }
+                        }
+
+                        svg{
+                            float: right;
+                            height: 15px;
+                            path{
+                                color: red !important;
+                            }
+    
+                        }
+                    }
+
+        
+
+                }
+
+                &:hover{
+                    background-color: red;
+
+                    p{
+                        color: white;
+                    }
+                    .Drop{
+                        opacity: 1;
+                    }
+                    
+                }
+                a{
+                    all:unset;
+                }
+
+                p{
+                    padding: 8px;
+
+                    font-family: sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: red;
+
+                    margin: 0;
+                    
+                    svg{
+                        height: 15px;
+                        path{
+                            color: red !important;
+
+                        }
+
+                    }
+                }
+            }
+         
+        }
+
+        .Demander{
+            button{
+                border: 4px solid red;
+                border-radius: 50px 50px;
+
+                padding: 8px;
+
+                color: white;
+                background-color: black;
+                
+                transition: 0.5s ;
+                cursor: pointer;
+
+
+                &:hover{
+                    background-color: red;
+                    border-color: rgb(238, 34, 34);
+
+                }
+            }
+        }
+
+        .menu-icon {
+
+            display: none;
+            width: 30px;
+            margin: 20px;
+    
+            cursor: pointer;
+            transform: rotate(180deg);
+            .bar {
+                
+                height: 2px;
+                background-color: red;
+                margin-bottom: 6px;
+                transition: background-color 0.3s ease-in-out;
+                cursor: pointer;
+            }
+            .bar_1 {
+                width: 20px;
+            }
+            
+            .bar_2 {
+                width: 40px;
+            }
+            
+            .bar_3 {
+                width: 30px;
+            }
+        }
+       
+        
+    }
+
+    &:hover{
+        .Drop{
+            z-index: 10;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .Menu{
+        height: 100px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 100%;
+    
+        
+    
+        .Menu_Content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            height: 100%;
+            width:  100%;
+    
+    
+            .Logo{
+    
+                img{
+                    width: 100px;
+                }
+            }
+    
+            .Routes{
+                display: none;
+                position: absolute;
+                z-index: 5;
+                transition: 1s;
+
+                text-align: center;
+
+
+                justify-content: center;
+                align-items: center;
+
+                flex-wrap: wrap;
+                background-color: white;
+
+                transform: translateY((64%));
+                padding: 20px;
+
+
+    
+                .Route{
+                    width: 80%;
+                    border-radius: 50px 50px;
+                    transition: 1s ;
+                    cursor: pointer;
+    
+                    position: relative;
+                    z-index: 0;
+    
+                    .Drop{
+                        transition: 1s ;
+    
+                        opacity: 0;
+                        height: 0px;
+                        position: absolute;
+    
+                        z-index: 10;
+    
+                        .Link{
+                            padding: 5px;
+                            border-bottom: 1px solid red;
+                            background-color: black;
+                            min-width: 280px;
+    
+                            a{
+                                color: white;
+                                font-family: sans-serif;
+                                font-weight: bold;
+                            }
+    
+                            &:hover{
+                                background-color: red;
+    
+                                .Child_Drop{
+                                    display: block;
+    
+                                }
+                            }
+    
+                            .Child_Drop{
+                                display: none;
+                                position: absolute;
+                                left: 100%;
+                                top: 0%;
+                                margin: 2px;
+    
+                                .Child_Link{
+                                    padding: 4px;
+                                    border-bottom: 1px solid red;
+                                    background-color: black;
+                                    min-width: 250px;
+                                    a{
+                                        color: white;
+                                        font-family: sans-serif;
+                                        font-weight: bold;
+    
+                                    }
+                                    &:hover{
+                                        background-color: red;
+                                    }
+                                }
+                            }
+    
+                            svg{
+                                float: right;
+                                height: 15px;
+                                path{
+                                    color: red !important;
+                                }
+        
+                            }
+                        }
+    
+            
+    
+                    }
+    
+                    &:hover{
+                        background-color: red;
+    
+                        z-index: 2;
+                        
+                        p{
+                            color: white;
+                        }
+                        .Drop{
+                            opacity: 1;
+                        }
+                    }
+    
+                    p{
+                        padding: 8px;
+    
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: red;
+    
+                        margin: 0;
+                        
+                        svg{
+                            height: 15px;
+                            path{
+                                color: red !important;
+    
+                            }
+    
+                        }
+                    }
+                }
+
+                
+             
+            }
+            .menu-btn:checked ~ .Routes{
+        
+                display: flex;
+              
+            }
+    
+            .Demander{
+                display: none;
+                button{
+                    border: 4px solid red;
+                    border-radius: 50px 50px;
+    
+                    padding: 8px;
+    
+                    color: white;
+                    background-color: black;
+                    
+                    transition: 0.5s ;
+                    cursor: pointer;
+    
+    
+                    &:hover{
+                        background-color: red;
+                        border-color: rgb(238, 34, 34);
+    
+                    }
+                }
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

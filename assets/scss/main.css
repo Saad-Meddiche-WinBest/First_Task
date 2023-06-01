@@ -1,0 +1,1391 @@
+.Menu {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+.Menu .Menu_Content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.Menu .Menu_Content .Logo img {
+  width: 100px;
+}
+.Menu .Menu_Content .Routes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.Menu .Menu_Content .Routes .Route {
+  border-radius: 50px 50px;
+  transition: 1s;
+  cursor: pointer;
+  position: relative;
+}
+.Menu .Menu_Content .Routes .Route .Drop {
+  transition: 1s;
+  opacity: 0;
+  height: 0px;
+  position: absolute;
+  margin: 10px;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link {
+  padding: 5px;
+  border-bottom: 1px solid red;
+  background-color: black;
+  min-width: 280px;
+  position: relative;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link a {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link:hover {
+  background-color: red;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link:hover .Child_Drop {
+  display: block;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  margin: 2px;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop .Child_Link {
+  padding: 4px;
+  border-bottom: 1px solid red;
+  background-color: black;
+  min-width: 250px;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop .Child_Link a {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop .Child_Link:hover {
+  background-color: red;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link svg {
+  float: right;
+  height: 15px;
+}
+.Menu .Menu_Content .Routes .Route .Drop .Link svg path {
+  color: red !important;
+}
+.Menu .Menu_Content .Routes .Route:hover {
+  background-color: red;
+}
+.Menu .Menu_Content .Routes .Route:hover p {
+  color: white;
+}
+.Menu .Menu_Content .Routes .Route:hover .Drop {
+  opacity: 1;
+}
+.Menu .Menu_Content .Routes .Route a {
+  all: unset;
+}
+.Menu .Menu_Content .Routes .Route p {
+  padding: 8px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  margin: 0;
+}
+.Menu .Menu_Content .Routes .Route p svg {
+  height: 15px;
+}
+.Menu .Menu_Content .Routes .Route p svg path {
+  color: red !important;
+}
+.Menu .Menu_Content .Demander button {
+  border: 4px solid red;
+  border-radius: 50px 50px;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Menu .Menu_Content .Demander button:hover {
+  background-color: red;
+  border-color: rgb(238, 34, 34);
+}
+.Menu .Menu_Content .menu-icon {
+  display: none;
+  width: 30px;
+  margin: 20px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.Menu .Menu_Content .menu-icon .bar {
+  height: 2px;
+  background-color: red;
+  margin-bottom: 6px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Menu .Menu_Content .menu-icon .bar_1 {
+  width: 20px;
+}
+.Menu .Menu_Content .menu-icon .bar_2 {
+  width: 40px;
+}
+.Menu .Menu_Content .menu-icon .bar_3 {
+  width: 30px;
+}
+.Menu:hover .Drop {
+  z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  .Menu {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+  }
+  .Menu .Menu_Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .Menu .Menu_Content .Logo img {
+    width: 100px;
+  }
+  .Menu .Menu_Content .Routes {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    transition: 1s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    transform: translateY(64%);
+    padding: 20px;
+  }
+  .Menu .Menu_Content .Routes .Route {
+    width: 80%;
+    border-radius: 50px 50px;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop {
+    transition: 1s;
+    opacity: 0;
+    height: 0px;
+    position: absolute;
+    z-index: 10;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link {
+    padding: 5px;
+    border-bottom: 1px solid red;
+    background-color: black;
+    min-width: 280px;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link:hover {
+    background-color: red;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link:hover .Child_Drop {
+    display: block;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    margin: 2px;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop .Child_Link {
+    padding: 4px;
+    border-bottom: 1px solid red;
+    background-color: black;
+    min-width: 250px;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop .Child_Link a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link .Child_Drop .Child_Link:hover {
+    background-color: red;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link svg {
+    float: right;
+    height: 15px;
+  }
+  .Menu .Menu_Content .Routes .Route .Drop .Link svg path {
+    color: red !important;
+  }
+  .Menu .Menu_Content .Routes .Route:hover {
+    background-color: red;
+    z-index: 2;
+  }
+  .Menu .Menu_Content .Routes .Route:hover p {
+    color: white;
+  }
+  .Menu .Menu_Content .Routes .Route:hover .Drop {
+    opacity: 1;
+  }
+  .Menu .Menu_Content .Routes .Route p {
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    margin: 0;
+  }
+  .Menu .Menu_Content .Routes .Route p svg {
+    height: 15px;
+  }
+  .Menu .Menu_Content .Routes .Route p svg path {
+    color: red !important;
+  }
+  .Menu .Menu_Content .menu-btn:checked ~ .Routes {
+    display: flex;
+  }
+  .Menu .Menu_Content .Demander {
+    display: none;
+  }
+  .Menu .Menu_Content .Demander button {
+    border: 4px solid red;
+    border-radius: 50px 50px;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .Menu .Menu_Content .Demander button:hover {
+    background-color: red;
+    border-color: rgb(238, 34, 34);
+  }
+  .Menu .Menu_Content .menu-icon {
+    display: block;
+  }
+}
+.Slide {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.Slide .Slide_Content {
+  transition: 1s;
+  background-image: url("../img/ant.webp");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Slide .Slide_Content .Left_Button button, .Slide .Slide_Content .Right_Button button {
+  padding: 10px;
+  color: white;
+  background-color: grey;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: px 5px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.Slide .Slide_Content .Left_Button button:hover, .Slide .Slide_Content .Right_Button button:hover {
+  background-color: transparent;
+}
+.Slide .Slide_Content .Content {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+.Slide .Slide_Content .Content .Holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 60%;
+}
+.Slide .Slide_Content .Content .Holder .Title {
+  animation: title_movement 0.4s linear;
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.Slide .Slide_Content .Content .Holder .Title p {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+.Slide .Slide_Content .Content .Holder .Demande {
+  animation: button_movement 0.8s linear;
+  margin: 20px;
+}
+.Slide .Slide_Content .Content .Holder .Demande button {
+  background-color: rgb(44, 40, 40);
+  color: white;
+  border: 2px solid red;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes title_movement {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes button_movement {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@media (max-width: 750px) {
+  .Slide {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .Slide .Slide_Content {
+    transition: 1s;
+    background-image: url("../img/ant.webp");
+    background-size: 100% 100%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Slide .Slide_Content .Left_Button button, .Slide .Slide_Content .Right_Button button {
+    padding: 5px;
+    color: white;
+    background-color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px 5px;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+  .Slide .Slide_Content .Left_Button button:hover, .Slide .Slide_Content .Right_Button button:hover {
+    background-color: transparent;
+  }
+  .Slide .Slide_Content .Content {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+  }
+  .Slide .Slide_Content .Content .Holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 65%;
+  }
+  .Slide .Slide_Content .Content .Holder .Title {
+    animation: title_movement 0.4s linear;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .Slide .Slide_Content .Content .Holder .Title p {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+  }
+  .Slide .Slide_Content .Content .Holder .Demande {
+    animation: button_movement 0.8s linear;
+    margin: 20px;
+  }
+  .Slide .Slide_Content .Content .Holder .Demande button {
+    background-color: rgb(44, 40, 40);
+    color: white;
+    border: 2px solid red;
+    border-radius: 50px;
+    padding: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.Texts {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  text-align: start;
+}
+.Texts .Text_Content {
+  width: 80%;
+}
+.Texts .Text_Content .First_Text {
+  line-height: 22px;
+}
+.Texts .Text_Content .First_Text .First_Title {
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+.Texts .Text_Content .First_Text .First_Title p {
+  margin: 0;
+}
+.Texts .Text_Content .Second_Text {
+  line-height: 22px;
+}
+.Texts .Text_Content .Second_Text .Second_Title {
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+}
+.Texts .Text_Content .Second_Text .Second_Title p {
+  margin: 0;
+}
+@media (max-width: 750px) {
+  .Texts {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .Texts .Text_Content {
+    max-width: 80%;
+  }
+  .Texts .Text_Content .First_Text {
+    line-height: 22px;
+  }
+  .Texts .Text_Content .First_Text .First_Title {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .Texts .Text_Content .First_Text .First_Title p {
+    margin: 0;
+  }
+  .Texts .Text_Content .First_Text .First_Content {
+    font-size: 12px;
+  }
+  .Texts .Text_Content .Second_Text {
+    line-height: 22px;
+  }
+  .Texts .Text_Content .Second_Text .Second_Title {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+  }
+  .Texts .Text_Content .Second_Text .Second_Title p {
+    margin: 0;
+  }
+  .Texts .Text_Content .Second_Text .Second_Content {
+    font-size: 12px;
+  }
+}
+.Services {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Services .Services_Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.Services .Services_Content .Title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #4285f4;
+  font-weight: 1000;
+  font-family: sans-serif;
+  font-size: 26px;
+}
+.Services .Services_Content .Cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Services .Services_Content .Cards .Cards_Content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.Services .Services_Content .Cards .Cards_Content .Card {
+  overflow: hidden;
+  position: relative;
+  width: 22%;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px lightgray;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content {
+  position: relative;
+  margin: 10px;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Image_Card {
+  position: relative;
+  max-height: 40%;
+  text-align: center;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Image_Card img {
+  max-width: 100%;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Title_Card {
+  position: relative;
+  max-height: 20%;
+  cursor: pointer;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Title_Card p {
+  color: #4f6fce;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 1000;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Title_Card p span {
+  font-size: 18px;
+  color: #50a2cb;
+  -webkit-text-decoration: underline #50a2cb 2px;
+          text-decoration: underline #50a2cb 2px;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Text_Card {
+  position: relative;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 22px;
+  max-height: 150px;
+  overflow: hidden;
+  color: rgb(58, 54, 54);
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .PLus_Infomration {
+  position: relative;
+  max-height: 10%;
+  margin: 10px;
+  float: right;
+  color: #4f6fce;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 1000;
+}
+.Services .Services_Content .Cards .Cards_Content .Card .Card_Content .PLus_Infomration a {
+  all: unset;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .Services {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .Services .Services_Content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .Services .Services_Content .Title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #4285f4;
+    font-weight: 1000;
+    font-family: sans-serif;
+    font-size: 26px;
+  }
+  .Services .Services_Content .Cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .Services .Services_Content .Cards .Cards_Content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px lightgray;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content {
+    position: relative;
+    margin: 10px;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Image_Card {
+    position: relative;
+    max-height: 40%;
+    text-align: center;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Image_Card img {
+    max-width: 100%;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Title_Card {
+    position: relative;
+    max-height: 20%;
+    cursor: pointer;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Title_Card p {
+    color: #4f6fce;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 1000;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Title_Card p span {
+    font-size: 18px;
+    color: #50a2cb;
+    -webkit-text-decoration: underline #50a2cb 2px;
+            text-decoration: underline #50a2cb 2px;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .Text_Card {
+    position: relative;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 22px;
+    max-height: 150px;
+    overflow: hidden;
+    color: rgb(58, 54, 54);
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .PLus_Infomration {
+    position: relative;
+    max-height: 10%;
+    margin: 10px;
+    float: right;
+    color: #4f6fce;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 1000;
+  }
+  .Services .Services_Content .Cards .Cards_Content .Card .Card_Content .PLus_Infomration a {
+    all: unset;
+    cursor: pointer;
+  }
+}
+.Qualities {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Qualities .Qualities_Content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  width: 100%;
+}
+.Qualities .Qualities_Content .Qualitie {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Qualities .Qualities_Content .Qualitie p {
+  background-color: rgba(87, 84, 84, 0.4);
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 1000;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+.Qualities .Qualities_Content .Qualitie_One {
+  position: relative;
+  background-image: url("../img/net_one.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Qualities .Qualities_Content .Qualitie_Two {
+  position: relative;
+  background-image: url("../img/net_two.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 750px) {
+  .Qualities {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .Qualities .Qualities_Content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  .Qualities .Qualities_Content .Qualitie {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Qualities .Qualities_Content .Qualitie p {
+    background-color: rgba(87, 84, 84, 0.4);
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 1000;
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+  }
+  .Qualities .Qualities_Content .Qualitie_One {
+    position: relative;
+    background-image: url("../img/net_one.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .Qualities .Qualities_Content .Qualitie_Two {
+    position: relative;
+    background-image: url("../img/net_two.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(42, 88, 134, 0.961);
+}
+.Footer .Footer_Content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 50px 10px 50px 10px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.Footer .Footer_Content .Part1 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .Footer_Content .Part1 .Part1_Content {
+  width: 90%;
+}
+.Footer .Footer_Content .Part1 .Part1_Content .Image {
+  overflow: hidden;
+}
+.Footer .Footer_Content .Part1 .Part1_Content .Image img {
+  max-width: 200px;
+}
+.Footer .Footer_Content .Part1 .Part1_Content .Description {
+  width: 80%;
+  font-weight: bold;
+}
+.Footer .Footer_Content .Part1 .Part1_Content .Socials {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.Footer .Footer_Content .Part1 .Part1_Content .Socials div svg {
+  padding: 10px;
+  background-color: rgb(52, 51, 57);
+  border-radius: 5px;
+}
+.Footer .Footer_Content .Part2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Title {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Links {
+  margin-top: 15px;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Links a:hover {
+  color: #ce318d;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Links a:hover svg path {
+  color: #ce318d;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Links a svg {
+  height: 15px;
+}
+.Footer .Footer_Content .Part2 .Part2_Content .Links a svg path {
+  transition: 0.5s;
+  font-weight: 1000;
+  color: white;
+}
+.Footer .Footer_Content .Part3 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .Footer_Content .Part3 .Part3_Content .Title {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+.Footer .Footer_Content .Part3 .Part3_Content .Links {
+  margin-top: 15px;
+}
+.Footer .Footer_Content .Part3 .Part3_Content .Links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.Footer .Footer_Content .Part3 .Part3_Content .Links a:hover {
+  color: #ce318d;
+}
+.Footer .Footer_Content .Part4 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.Footer .Footer_Content .Part4 .Part4_Content {
+  width: 90%;
+  word-wrap: break-word;
+}
+.Footer .Footer_Content .Part4 .Part4_Content .Title {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+.Footer .Footer_Content .Part4 .Part4_Content .Links {
+  width: 100%;
+  margin-top: 15px;
+}
+.Footer .Footer_Content .Part4 .Part4_Content .Links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+}
+
+@media (max-width: 850px) {
+  .Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 88, 134, 0.961);
+  }
+  .Footer .Footer_Content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 10px 50px 10px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .Footer .Footer_Content .Part1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Footer .Footer_Content .Part1 .Part1_Content {
+    width: 90%;
+  }
+  .Footer .Footer_Content .Part1 .Part1_Content .Image {
+    overflow: hidden;
+    text-align: center;
+  }
+  .Footer .Footer_Content .Part1 .Part1_Content .Image img {
+    max-width: 200px;
+  }
+  .Footer .Footer_Content .Part1 .Part1_Content .Description {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+  }
+  .Footer .Footer_Content .Part1 .Part1_Content .Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .Footer .Footer_Content .Part1 .Part1_Content .Socials div svg {
+    padding: 8px;
+    background-color: rgb(52, 51, 57);
+    border-radius: 5px;
+  }
+  .Footer .Footer_Content .Part2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content {
+    width: 90%;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Links {
+    margin-top: 15px;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+    transition: 0.5s;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Links a:hover {
+    color: #ce318d;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Links a:hover svg path {
+    color: #ce318d;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Links a svg {
+    height: 15px;
+  }
+  .Footer .Footer_Content .Part2 .Part2_Content .Links a svg path {
+    transition: 0.5s;
+    font-weight: 1000;
+    color: white;
+  }
+  .Footer .Footer_Content .Part3 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Footer .Footer_Content .Part3 .Part3_Content {
+    width: 90%;
+  }
+  .Footer .Footer_Content .Part3 .Part3_Content .Title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+  .Footer .Footer_Content .Part3 .Part3_Content .Links {
+    margin-top: 15px;
+  }
+  .Footer .Footer_Content .Part3 .Part3_Content .Links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+    transition: 0.5s;
+  }
+  .Footer .Footer_Content .Part3 .Part3_Content .Links a:hover {
+    color: #ce318d;
+  }
+  .Footer .Footer_Content .Part4 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .Footer .Footer_Content .Part4 .Part4_Content {
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .Footer .Footer_Content .Part4 .Part4_Content .Title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+  .Footer .Footer_Content .Part4 .Part4_Content .Links {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .Footer .Footer_Content .Part4 .Part4_Content .Links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+  }
+}
+.Content_Of_Page_NotreEntrprise {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  margin: 70px;
+  margin-top: 0px;
+  color: rgb(55, 51, 51);
+  position: relative;
+  z-index: 2;
+}
+.Content_Of_Page_NotreEntrprise .Big_Title {
+  text-align: center;
+  width: 100%;
+  color: #001b5b;
+  font-weight: 1000;
+  font-size: 32px;
+  position: relative;
+}
+.Content_Of_Page_NotreEntrprise .Descriptions {
+  text-align: center;
+  width: 100%;
+}
+.Content_Of_Page_NotreEntrprise .Societies {
+  margin-top: 20px;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Title {
+  font-size: 28px;
+  font-weight: 1000;
+  color: #08c;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Left_Side {
+  width: 50%;
+  overflow: hidden;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Left_Side .Image img {
+  max-width: 600px;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Button_Holder {
+  display: flex;
+  justify-content: center;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Button_Holder button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #001B5B;
+  border-radius: 50px 50px;
+  border: none;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Button_Holder button p {
+  margin: 0;
+  padding: 10px;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Right_Side {
+  width: 50%;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Right_Side .Description {
+  font-weight: 500;
+}
+.Content_Of_Page_NotreEntrprise .Societies .societie_1 {
+  display: flex;
+  gap: 20px;
+}
+.Content_Of_Page_NotreEntrprise .Societies .societie_2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+@media (max-width: 850px) {
+  .Big_Title {
+    font-size: 24px !important;
+  }
+  .Descriptions {
+    line-height: 22px;
+  }
+  .Societies .Title {
+    text-align: center;
+    font-size: 20px !important;
+  }
+  .Societies .societie_1 {
+    flex-wrap: wrap;
+  }
+  .Societies .societie_2 {
+    flex-wrap: wrap;
+  }
+  .Societies .Left_Side {
+    width: 100% !important;
+  }
+  .Societies .Left_Side .Image {
+    display: flex;
+    justify-content: center;
+  }
+  .Societies .Left_Side .Image img {
+    width: 500px;
+  }
+  .Societies .Right_Side {
+    width: 100% !important;
+  }
+}
+.Content_Of_Page_Contact {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  margin: 40px;
+  font-family: sans-serif;
+}
+.Content_Of_Page_Contact .First_Part {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.Content_Of_Page_Contact .First_Part .Formule {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content {
+  width: 60%;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #D3CBCB;
+  text-align: center;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content .contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content .form-group {
+  margin-bottom: 20px;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content label {
+  display: block;
+  font-weight: bold;
+  text-align: start;
+  width: 80%;
+  margin: auto;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content input,
+.Content_Of_Page_Contact .First_Part .Formule .Content textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content select {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content select option {
+  width: 100%;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content button[type=submit] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content button[type=submit]:hover {
+  background-color: #45a049;
+}
+.Content_Of_Page_Contact .Second_Part {
+  width: 40%;
+}
+.Content_Of_Page_Contact .Second_Part .Upper_Part .Content .Links .Link a {
+  all: unset;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  line-height: 40px;
+  cursor: pointer;
+}
+.Content_Of_Page_Contact .Second_Part .Upper_Part .Content .Links .Link a span {
+  font-weight: normal;
+}
+.Content_Of_Page_Contact .Second_Part .Middle_Part .Description {
+  margin: 20px;
+}
+.Content_Of_Page_Contact .Second_Part .Lower_Part .Title {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.Content_Of_Page_Contact .Second_Part .Lower_Part .Options {
+  line-height: 30px;
+}
+.Content_Of_Page_Contact .Second_Part .Lower_Part .Options .Option svg {
+  font-weight: 1000;
+  color: red;
+}
+.Content_Of_Page_Contact .Header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Content_Of_Page_Contact .Header .Title {
+  color: red;
+  font-weight: 1000;
+  font-size: 24px;
+}
+.Content_Of_Page_Contact .Header .Line {
+  height: 5px;
+  flex: 0.9;
+  background-color: red;
+}
+
+.style_1 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.style_2 {
+  font-weight: bold;
+  color: red;
+}
+
+.style_3 {
+  font-weight: bold;
+}
+
+.style_4 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.style_5 {
+  color: red;
+}
+
+.style_6 {
+  transition: 0.5s;
+}
+.style_6:hover {
+  color: #ce318d;
+}
+
+.style_7 {
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+.style_8 {
+  font-weight: bold;
+  color: #08c;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .child_container {
+  width: 100%;
+  max-width: 1300px;
+}/*# sourceMappingURL=main.css.map */
