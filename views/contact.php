@@ -29,16 +29,12 @@ if (isset($_POST["Envoyer"])) {
                      }
                      unset($_SESSION['errors']);
                   }
-
-                  if (isset($_SESSION['success'])) {
-                     echo "<p style='color:green;margin:5px'>" . $_SESSION['success'] . "</p>";
-                     unset($_SESSION['success']);
-                  }
                   ?>
+                  <p style='color:green;margin:5px;display:none;' id="successS1">Message Has Been sent Successfuly</p>
                   <form class="contact-form" method="POST" action="">
                      <div class="form-group">
                         <label for="nom">Nom:</label>
-                        <input type="text" id="nom" name="nom" placeholder="Nom"  />
+                        <input type="text" id="nom" name="nom" placeholder="Nom" />
                      </div>
                      <div class="form-group">
                         <label for="ville">Ville:</label>

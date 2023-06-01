@@ -1,5 +1,5 @@
 <!-- Footer -->
-<div class="container" style="background-color: rgba(42, 88, 134)">
+<div class="container" style="background-color: black;">
     <div class="child_container" id="footer">
         <div class="Footer">
             <div class="Footer_Content">

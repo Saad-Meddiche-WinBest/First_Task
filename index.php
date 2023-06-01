@@ -2,7 +2,9 @@
 require_once './autoload.php';
 
 /* In this array we stock only the pages that the user can see */
-$pages = ['home', 'aPropos', 'blog', 'contact', 'notreEntreprise', 'nuisibles'];
+$pages = ['home', 'aPropos', 'blog', 'contact', 'notreEntreprise', 'nuisibles', 'auditAnalyseDuBesoin', 'controleAcces', 'cybergardiennage', 'depannageCamera', 'detectionIncendie', 'detectionIntrusion', 'installationCamera', 'securiteGardiennage', 'venteCamera', 'videoprotection'];
+
+
 
 // Check the url if it is contain ?page
 // If Not goto Home page
