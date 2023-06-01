@@ -111,7 +111,7 @@
                     </div>
 
                     <div class="Demander">
-                        <button>DEMANDEZ DEVIS</button>
+                        <a href="contact"><button>DEMANDEZ DEVIS</button></a>
                     </div>
                 </div>
             </div>
