@@ -8,9 +8,9 @@ var content_of_title = document.getElementById("TitleS1_content");
 var button = document.getElementById("ButtoS1");
 
 var images = {
-    1:{Link :'./assets/img/ant.webp' , title :'Lutte contre les insectes à Casablanca'},
-    2:{Link :'./assets/img/rats.webp' , title :'Les professionnels de la Dératisation à Casablanca'},
-    3:{Link :'./assets/img/Human.webp' , title :'Les specialites de la desinfection au Maroc'}
+    1:{Link :'./views/includes/assets/img/ant.webp' , title :'Lutte contre les insectes à Casablanca'},
+    2:{Link :'./views/includes/assets/img/rats.webp' , title :'Les professionnels de la Dératisation à Casablanca'},
+    3:{Link :'./views/includes/assets/img/Human.webp' , title :'Les specialites de la desinfection au Maroc'}
 }
 
 

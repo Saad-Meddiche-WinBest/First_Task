@@ -1262,6 +1262,7 @@
   text-align: start;
   width: 80%;
   margin: auto;
+  color: #8b2326;
 }
 .Content_Of_Page_Contact .First_Part .Formule .Content input,
 .Content_Of_Page_Contact .First_Part .Formule .Content textarea {
@@ -1270,25 +1271,38 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.Content_Of_Page_Contact .First_Part .Formule .Content input::-moz-placeholder, .Content_Of_Page_Contact .First_Part .Formule .Content textarea::-moz-placeholder {
+  color: #84757d;
+  font-size: 16px;
+  font-weight: Bold;
+}
+.Content_Of_Page_Contact .First_Part .Formule .Content input::placeholder,
+.Content_Of_Page_Contact .First_Part .Formule .Content textarea::placeholder {
+  color: #84757d;
+  font-size: 16px;
+  font-weight: Bold;
+}
 .Content_Of_Page_Contact .First_Part .Formule .Content select {
   width: 85%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  color: #84757d;
+  font-size: 16px;
+  font-weight: Bold;
 }
 .Content_Of_Page_Contact .First_Part .Formule .Content select option {
   width: 100%;
 }
 .Content_Of_Page_Contact .First_Part .Formule .Content button[type=submit] {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  padding: 20px 40px;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-.Content_Of_Page_Contact .First_Part .Formule .Content button[type=submit]:hover {
-  background-color: #45a049;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .Content_Of_Page_Contact .Second_Part {
   width: 40%;
@@ -1335,6 +1349,23 @@
   background-color: red;
 }
 
+@media (max-width: 750px) {
+  .Content_Of_Page_Contact {
+    flex-wrap: wrap;
+  }
+  .Content_Of_Page_Contact .First_Part, .Content_Of_Page_Contact .Second_Part {
+    width: 100%;
+  }
+  .Content_Of_Page_Contact .First_Part .Formule {
+    justify-content: center;
+  }
+  .Content_Of_Page_Contact .First_Part .Formule .Content {
+    width: 100%;
+  }
+  .Content_Of_Page_Contact .First_Part .Formule .Content .contact-form {
+    max-width: 400px;
+  }
+}
 .style_1 {
   font-weight: bold;
   font-size: 15px;
@@ -1373,6 +1404,25 @@
 .style_8 {
   font-weight: bold;
   color: #08c;
+}
+
+.alert.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.alert.alert-success hr {
+  border-top-color: #b1dfbb;
+}
+
+.alert.alert-success .alert-link {
+  color: #0b2e13;
 }
 
 body {

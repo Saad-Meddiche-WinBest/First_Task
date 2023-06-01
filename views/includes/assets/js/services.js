@@ -4,7 +4,7 @@ var Cards_Content = document.getElementById('Cards_Content_S1');
 var Card = `<div class="Card">
                 <div class="Card_Content">
                 <div class="Image_Card">
-                    <img src="./assets/img/1.webp" alt="" />
+                    <img src="./views/includes/assets/img/1.webp" alt="" />
                 </div>
                 <div class="Title_Card">
                     <p>
@@ -27,6 +27,8 @@ var Card = `<div class="Card">
                 </div>
             </div>`;
 
-for(var i = 1 ; i <= 8; i++){
-    Cards_Content.innerHTML+= Card;
-}
+            if(Cards_Content){
+                for(var i = 1 ; i <= 8; i++){
+                    Cards_Content.innerHTML+= Card;
+                }
+            }
