@@ -172,8 +172,7 @@
     </div>
 </div>
 
-<script src="./views/includes/assets/js/services.js"></script>
-<script src="./views/includes/assets/js/slide.js"></script>
+
 </body>
 
 </html>

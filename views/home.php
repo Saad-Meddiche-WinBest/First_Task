@@ -3,7 +3,8 @@
     <div class="Slide_Content" id="ContentS1">
         <div class="Left_Button">
             <button onclick="Slide(-1)">
-                <</button>
+                < 
+            </button>
         </div>
         <div class="Content">
             <div class="Holder">
@@ -154,3 +155,5 @@
         </div>
     </div>
 </div>
+<script src="./views/includes/assets/js/services.js"></script>
+<script src="./views/includes/assets/js/slide.js"></script>

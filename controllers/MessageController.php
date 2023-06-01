@@ -18,10 +18,8 @@ class MessageController
             'sujet' => $_POST["sujet"],
             'content' => $_POST["content"],
         );
-        
-        if ($results = Message::add($data)) {
-            print_r($results);
-        }
+
+        Message::add($data);
     }
 
     private static function validateData()

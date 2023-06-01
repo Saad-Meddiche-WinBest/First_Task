@@ -2,7 +2,8 @@
 class Redirect{
  
     static function  to($page){
-        header('location:'.$page);
+        echo '<script>window.location.href = "'.$page.'";</script>';
+
     }
     
 }

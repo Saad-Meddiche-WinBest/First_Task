@@ -35,10 +35,10 @@ if (isset($_POST["Envoyer"])) {
                      unset($_SESSION['success']);
                   }
                   ?>
-                  <form class="contact-form" method="POST">
+                  <form class="contact-form" method="POST" action="">
                      <div class="form-group">
                         <label for="nom">Nom:</label>
-                        <input type="text" id="nom" name="nom" placeholder="Nom" required />
+                        <input type="text" id="nom" name="nom" placeholder="Nom"  />
                      </div>
                      <div class="form-group">
                         <label for="ville">Ville:</label>
@@ -68,18 +68,20 @@ if (isset($_POST["Envoyer"])) {
                      </div>
                      <div class="form-group">
                         <label for="sujet">Sujet:</label>
-                        <select id="sujet" name="sujet" required>
+                        <select id="sujet" name="sujet" required onchange="check_if_autre_option_is_selected()">
                            <option value="" selected disabled>Sélectionner un Sujet</option>
-                           <option value="Paris">Studio</option>
+                           <option value="Studio">Studio</option>
                            <option value="Appartement">Appartement</option>
                            <option value="Maison">Maison</option>
                            <option value="Villa">Villa</option>
+                           <option value="">
+                              Autre
+                           </option>
                         </select>
                      </div>
-                     <!-- <div class="form-group">
-                        <label for="autre">Autre:</label>
-                        <input type="text" id="autre" name="sujet" placeholder="Autre" />
-                     </div> -->
+                     <div class="form-group" style="display:none;" id="AutreS1">
+
+                     </div>
                      <div class="form-group">
                         <label for="message">Message:</label>
                         <textarea id="message" name="content" rows="4" required placeholder="Message"></textarea>
@@ -91,6 +93,7 @@ if (isset($_POST["Envoyer"])) {
                </div>
             </div>
          </div>
+
          <div class="Second_Part">
             <div class="Upper_Part">
                <div class="Header">
@@ -225,3 +228,5 @@ if (isset($_POST["Envoyer"])) {
       </div>
    </div>
 </div>
+
+<script src="./views/includes/assets/js/contact.js"></script>
