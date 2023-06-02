@@ -1,5 +1,5 @@
 <?php
-    $page = PageController::get_info_of_page($_GET['page']);
+$page = PageController::get_info_of_page($_GET['page']);
 ?>
 <div class="container">
     <div class="child_container">
@@ -20,7 +20,7 @@
                 <div class="societie_1">
                     <div class="Left_Side">
                         <div class="Image">
-                            <img src="./views/includes/assets/img/Clean_1.webp" alt="" />
+                            <img src="<?php echo $page['Images'][0] ?>" alt="" />
                         </div>
                     </div>
                     <div class="Right_Side">
@@ -52,7 +52,7 @@
                 <div class="societie_2">
                     <div class="Left_Side">
                         <div class="Image">
-                            <img src="./views/includes/assets/img/Clean_2.webp" alt="" />
+                            <img src="<?php echo $page['Images'][1] ?>" alt="" />
                         </div>
                     </div>
                     <div class="Right_Side">

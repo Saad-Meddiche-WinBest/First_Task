@@ -1166,8 +1166,16 @@
   width: 50%;
   overflow: hidden;
 }
+.Content_Of_Page_NotreEntrprise .Societies .Left_Side .Image {
+  position: relative;
+}
 .Content_Of_Page_NotreEntrprise .Societies .Left_Side .Image img {
   max-width: 500px;
+  transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+  background-color: grey; /* Placeholder background color */
+}
+.Content_Of_Page_NotreEntrprise .Societies .Left_Side .Image:hover img {
+  opacity: 0.8; /* Reduce opacity on hover */
 }
 .Content_Of_Page_NotreEntrprise .Societies .Button_Holder {
   display: flex;
@@ -1190,6 +1198,17 @@
 }
 .Content_Of_Page_NotreEntrprise .Societies .Right_Side .Description {
   font-weight: 500;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Right_Side .Image {
+  position: relative;
+}
+.Content_Of_Page_NotreEntrprise .Societies .Right_Side .Image img {
+  max-width: 500px;
+  transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+  background-color: grey; /* Placeholder background color */
+}
+.Content_Of_Page_NotreEntrprise .Societies .Right_Side .Image:hover img {
+  opacity: 0.8; /* Reduce opacity on hover */
 }
 .Content_Of_Page_NotreEntrprise .Societies .societie_1 {
   display: flex;

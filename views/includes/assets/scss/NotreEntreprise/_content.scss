@@ -60,11 +60,22 @@
         .Left_Side{
             width: 50%;
             overflow: hidden;
-            .Image{
-                img{
-                    max-width: 500px;
+            .Image {
+                position: relative;
+              
+                img {
+                  max-width: 500px;
+                  transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+                  background-color: grey; /* Placeholder background color */
                 }
-            }
+              
+                &:hover {
+                  img {
+                    opacity: 0.8; /* Reduce opacity on hover */
+                  }
+                }
+              }
+              
         }
 
         .Button_Holder{
@@ -94,6 +105,21 @@
             .Description{
                 font-weight: 500;
             }
+            .Image {
+                position: relative;
+              
+                img {
+                  max-width: 500px;
+                  transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+                  background-color: grey; /* Placeholder background color */
+                }
+              
+                &:hover {
+                  img {
+                    opacity: 0.8; /* Reduce opacity on hover */
+                  }
+                }
+              }
 
             
         }
