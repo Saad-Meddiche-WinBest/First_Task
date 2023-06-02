@@ -14,7 +14,7 @@ if (isset($_GET['page'])) {
     // if Not show 404
     if (in_array($_GET['page'], $pages)) {
 
-        require_once './views/includes/header.php';
+        HomeController::index('header');
 
         if (in_array($_GET['page'], $base_pages)) {
             HomeController::index('basePage');
@@ -22,12 +22,12 @@ if (isset($_GET['page'])) {
             HomeController::index($_GET['page']);
         }
 
-        require_once './views/includes/footer.php';
+        HomeController::index('footer');
     } else {
         include('views/includes/404.php');
     }
 } else {
-    require_once './views/includes/header.php';
+    HomeController::index('header');
     HomeController::index('home');
-    require_once './views/includes/footer.php';
+    HomeController::index('footer');
 }

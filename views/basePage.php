@@ -1,11 +1,11 @@
 <?php
-$page = PageController::get_info_of_page($_GET['page']);
+$pageS1 = PageController::get_info_of_page($_GET['page']);
 ?>
 <div class="container">
     <div class="child_container">
         <div class="Content_Of_Page_NotreEntrprise">
             <div class="Big_Title">
-                <h1>Société <?php echo $page['Title'] ?> Casablanca</h1>
+                <h1>Société <?php echo $pageS1['Title'] ?> Casablanca</h1>
             </div>
 
             <div class="Descriptions">
@@ -20,7 +20,7 @@ $page = PageController::get_info_of_page($_GET['page']);
                 <div class="societie_1">
                     <div class="Left_Side">
                         <div class="Image">
-                            <img src="<?php echo $page['Images'][0] ?>" alt="" />
+                            <img src="<?php echo $pageS1['Images'][0] ?>" alt="" />
                         </div>
                     </div>
                     <div class="Right_Side">
@@ -47,12 +47,12 @@ $page = PageController::get_info_of_page($_GET['page']);
                     </div>
                 </div>
                 <div class="Mini_Title">
-                    <h2>Société <?php echo $page['Title'] ?></h2>
+                    <h2>Société <?php echo $pageS1['Title'] ?></h2>
                 </div>
                 <div class="societie_2">
                     <div class="Left_Side">
                         <div class="Image">
-                            <img src="<?php echo $page['Images'][1] ?>" alt="" />
+                            <img src="<?php echo $pageS1['Images'][1] ?>" alt="" />
                         </div>
                     </div>
                     <div class="Right_Side">
