@@ -3,11 +3,8 @@ class Message
 {
     public static function add($data)
     {
-
-
         $requete = "INSERT INTO `messages`(`nom`, `ville`, `numero`, `email`, `local`, `sujet`, `content`) VALUES (:nom, :ville, :numero, :email, :local, :sujet, :content)";
         $stmt = Db::connect()->prepare($requete);
-
 
         // Sanitize and bind parameters
         $sanitizedNom = strip_tags($data['nom']);

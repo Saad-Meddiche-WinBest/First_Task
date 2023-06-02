@@ -1,8 +1,11 @@
+<?php
+    $page = PageController::get_info_of_page($_GET['page']);
+?>
 <div class="container">
     <div class="child_container">
         <div class="Content_Of_Page_NotreEntrprise">
             <div class="Big_Title">
-                <p>Société de nettoyage Casablanca Maroc WINBEST NETTOYAGE</p>
+                <h1>Société <?php echo $page['Title'] ?> Casablanca</h1>
             </div>
 
             <div class="Descriptions">
@@ -43,8 +46,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="Big_Title">
-                    <p>Entreprise de nettoyage sur Casablanca</p>
+                <div class="Mini_Title">
+                    <h2>Société <?php echo $page['Title'] ?></h2>
                 </div>
                 <div class="societie_2">
                     <div class="Left_Side">

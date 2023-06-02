@@ -2,7 +2,7 @@
    <div class="child_container">
       <div class="Content_Of_Page_NotreEntrprise">
          <div class="Big_Title">
-            <p>Société de nettoyage Casablanca Maroc WINBEST NETTOYAGE</p>
+            <h1>Société de nettoyage Casablanca</h1>
          </div>
 
          <div class="Descriptions">
@@ -44,7 +44,7 @@
                </div>
             </div>
             <div class="Big_Title">
-               <p>Entreprise de nettoyage sur Casablanca</p>
+               <h2>Entreprise de nettoyage sur Casablanca</h2>
             </div>
             <div class="societie_2">
                <div class="Left_Side">
