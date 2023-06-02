@@ -1,3 +1,7 @@
+<?php
+$pageS1 = PageController::get_info_of_page($_GET['page']);
+?>
+
 <!DOCTYPE html>
 <html lang="en" style="height: 100vh">
 
@@ -12,7 +16,7 @@
     <!-- Include icons from fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>Services</title>
+    <title><?php echo $pageS1['Title'] ?></title>
 </head>
 
 <body style="height: 100%">
