@@ -1439,6 +1439,11 @@
   color: #08c;
 }
 
+.style_9 {
+  font-weight: bold;
+  color: #001b5b;
+}
+
 .alert.alert-success {
   color: #155724;
   background-color: #d4edda;
