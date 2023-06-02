@@ -31,7 +31,20 @@ class PageController
         ],
         'securiteGardiennage' => [
             'Title' => 'Agent de Securité et gardinage',
+        ],
+        'aPropos' => [
+            'Title' => 'nettoyage',
+        ],
+        'notreEntreprise' => [
+            'Title' => 'nettoyage',
+        ],
+        'nuisibles' => [
+            'Title' => 'nettoyage',
+        ],
+        'blog' => [
+            'Title' => 'nettoyage',
         ]
+
 
     ];
 

@@ -8,7 +8,6 @@ class HomeController
         $array_paths = array(
             'views/',
             'views/includes/',
-            'views/nosActiviter/',
         );
 
         /* Boocle the class name with each paths , and if it exist then enclud it */
