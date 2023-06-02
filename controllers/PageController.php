@@ -13,7 +13,7 @@ class PageController
             'Title' => 'Depannage Camera Surveillance',
             'Images' => [
                 './views/includes/assets/img/nosActiviter/depannage-camera-surveillance-maroc.webp',
-                './views/includes/assets/img/nosActiviter/depannage-camera-surveillance.webp'
+                './views/includes/assets/img/nosActiviter/depannage-camera-surveillance.webp' 
             ]
         ],
         'venteCamera' => [

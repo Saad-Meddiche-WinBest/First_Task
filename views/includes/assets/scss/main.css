@@ -1195,6 +1195,7 @@
 }
 .Content_Of_Page_NotreEntrprise .Societies .Right_Side {
   width: 50%;
+  text-align: justify;
 }
 .Content_Of_Page_NotreEntrprise .Societies .Right_Side .Description {
   font-weight: 500;

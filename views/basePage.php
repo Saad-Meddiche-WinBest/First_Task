@@ -20,7 +20,7 @@ $pageS1 = PageController::get_info_of_page($_GET['page']);
                 <div class="societie_1">
                     <div class="Left_Side">
                         <div class="Image">
-                            <img src="<?php echo $pageS1['Images'][0] ?>" alt="" />
+                            <img src="<?php echo $pageS1['Images'][0] ?>" alt="Société <?php echo $pageS1['Title'] ?> Casablanca Maroc" />
                         </div>
                     </div>
                     <div class="Right_Side">
@@ -52,7 +52,7 @@ $pageS1 = PageController::get_info_of_page($_GET['page']);
                 <div class="societie_2">
                     <div class="Left_Side">
                         <div class="Image">
-                            <img src="<?php echo $pageS1['Images'][1] ?>" alt="" />
+                            <img src="<?php echo $pageS1['Images'][1] ?>" alt="Société <?php echo $pageS1['Title'] ?> Casablanca." />
                         </div>
                     </div>
                     <div class="Right_Side">
