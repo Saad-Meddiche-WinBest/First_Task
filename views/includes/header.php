@@ -1,5 +1,7 @@
 <?php
-$pageS1 = PageController::get_info_of_page($_GET['page']);
+if (isset($_GET['page'])) {
+    $pageS1 = PageController::get_info_of_page($_GET['page']);
+}
 ?>
 
 <!DOCTYPE html>

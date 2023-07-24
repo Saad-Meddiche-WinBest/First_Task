@@ -230,7 +230,6 @@ class PageController
                 <span class='style_9'>ARA SURVEILLANCE</span> est votre partenaire de confiance pour réaliser un audit et une analyse approfondie des besoins en sécurité de votre entreprise. Grâce à notre expertise en <a href='installationCamera' class='style_9'>installation de caméras de surveillance</a> et en systèmes de sécurité, nous sommes en mesure de vous fournir des recommandations personnalisées pour renforcer la protection de votre entreprise. Faites confiance à <span class='style_9'>ARA SURVEILLANCE</span> pour identifier les lacunes de sécurité, concevoir des solutions adaptées et vous aider à atteindre un niveau de sécurité optimal."
             ]
         ],
-
         'securiteGardiennage' => [
             'Title' => 'Agent de Sécurité et Gardiennage',
             'Images' => [
@@ -255,7 +254,6 @@ class PageController
                 <span class='style_9'>ARA SURVEILLANCE</span> offre des services d'agent de sécurité et de gardiennage professionnels pour renforcer la sécurité de votre entreprise. Nos agents de sécurité qualifiés, formés et fiables assurent une surveillance efficace, une réaction rapide aux incidents et une gestion professionnelle des situations d'urgence. Faites confiance à <span class='style_9'>ARA SURVEILLANCE</span> pour protéger vos biens, dissuader les intrusions et garantir la tranquillité d'esprit en matière de sécurité."
             ]
         ],
-        
         'aPropos' => [
             'Title' => 'nettoyage',
             'Images' => [
@@ -274,10 +272,24 @@ class PageController
                 './views/includes/assets/img/Clean_1.webp',
                 './views/includes/assets/img/Clean_1.webp'
             ],
-            'Description' => "",
+            'Description' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+            ",
             'Content' => [
-                "",
-                ""
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+
+                ",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+                "
             ]
         ],
         'nuisibles' => [
@@ -286,10 +298,24 @@ class PageController
                 './views/includes/assets/img/Clean_1.webp',
                 './views/includes/assets/img/Clean_1.webp'
             ],
-            'Description' => "",
+            'Description' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+            ",
             'Content' => [
-                "",
-                ""
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+
+                ",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+                "
             ]
         ],
         'blog' => [
@@ -298,13 +324,52 @@ class PageController
                 './views/includes/assets/img/Clean_1.webp',
                 './views/includes/assets/img/Clean_1.webp'
             ],
-            'Description' => "",
+            'Description' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+            ",
             'Content' => [
-                "",
-                ""
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+
+                ",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+                "
+            ]
+        ],
+        'aPropos' => [
+            'Title' => 'nettoyage',
+            'Images' => [
+                './views/includes/assets/img/Clean_1.webp',
+                './views/includes/assets/img/Clean_1.webp'
+            ],
+            'Description' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+            ",
+            'Content' => [
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+
+                ",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium doloremque inventore quisquam consequuntur vel voluptate distinctio itaque cumque facilis laudantium officiis enim quo eos quas, voluptates sequi et nihil.
+
+                "
             ]
         ]
-
 
     ];
 

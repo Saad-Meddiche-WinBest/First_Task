@@ -1,6 +1,7 @@
 <?php
 $pageS1 = PageController::get_info_of_page($_GET['page']);
 ?>
+
 <div class="container">
     <div class="child_container">
         <div class="Content_Of_Page_NotreEntrprise">
